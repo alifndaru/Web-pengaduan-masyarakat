@@ -1,0 +1,33 @@
+body{
+  font-family: "Quicksand";
+}
+.navgo{
+  font-size: 18px;
+}
+.jumbotronText{
+  text-align: center;
+}
+.icon-1 {
+  width: 290px;
+  height: 220px;
+}
+.btn-lapor{
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  -webkit-text-decoration: blue;
+          text-decoration: blue;
+}
+.cardInfo{
+  margin-right: 30px;
+  border-radius: 20px;
+}
+.cardInfo img{
+  border-radius: 30px;
+  padding-top: 10px;
+}
+
+.cardImg{
+  width: 80px;
+  height: 90px;
+}

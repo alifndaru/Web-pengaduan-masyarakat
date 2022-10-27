@@ -1,0 +1,72 @@
+:root {
+    --black: rgba(0, 0, 0, 1);
+    --burnham: rgba(5, 40, 37, 1);
+    --erie-black: rgba(24, 25, 31, 1);
+    --new-car: rgba(46, 79, 215, 1);
+    --white: rgba(255, 255, 255, 0.78);
+    --white-2: rgba(255, 255, 255, 0.078);
+    --font-size-xxs: 16px;
+    --font-size-xs: 18px;
+    --font-size-s: 20px;
+    --font-size-m: 24px;
+    --font-size-l: 42px;
+    --font-size-xl: 52px;
+    --font-size-xxl: 64px;
+    --font-familiy-inter: "Inter";
+    --font-familiy-poppins: "Poppins";
+}
+
+.inter-bold-white-64px {
+    color: var(--white);
+    font-family: var(--font-familiy-inter);
+    font-size: var(--font-size-xxl);
+    font-weight: 700;
+    font-style: normal;
+}
+
+.inter-bold-black-24px {
+    color: var(--black);
+    font-family: var(--font-familiy-inter);
+    font-size: var(--font-size-m);
+    font-weight: 700;
+    font-style: normal;
+}
+
+.inter-bold-eerie-black-24px {
+    color: var(--erie-black);
+    font-family: var(--font-familiy-inter);
+    font-size: var(--font-size-m);
+    font-weight: 700;
+    font-style: normal;
+}
+
+.inter-normal-eerie-black-16px {
+    color: var(--erie-black);
+    font-family: var(--font-familiy-inter);
+    font-size: var(--font-size-xxs);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.inter-normal-eerie-black-20px {
+    color: var(--erie-black);
+    font-family: var(--font-familiy-inter);
+    font-size: var(--font-size-l);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.inter-bold-black-20px {
+    color: var(--black);
+    font-family: var(--font-familiy-inter);
+    font-style: normal;
+    font-weight: 700;
+}
+
+.inter-normal-black-18px {
+    color: var(--black);
+    font-family: var(--font-familiy-inter);
+    font-size: var(--font-size-xs);
+    font-weight: 400;
+    font-style: normal;
+}

@@ -1,0 +1,552 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700|Inter:400,700,400italic");
+.home-user-2 {
+    align-items: flex-start;
+    background-color: var(--white32);
+    border: 1px none;
+    display: flex;
+    flex-direction: column;
+    margin-left: 350px;
+    height: 2900px;
+    width: 1400px;
+}
+
+.hidden,
+.hidden * {
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.header-2 {
+    height: 97px;
+    position: absolute;
+    left: 120px;
+    top: -15px;
+    width: 1432px;
+}
+
+.process-4 {
+    align-items: flex-start;
+    background-color: var(--white32);
+    display: flex;
+    border: 1px none;
+    flex-direction: column;
+    margin-left: -80px;
+    margin-top: 25px;
+    min-height: -90px;
+    padding: 100px 50px;
+    width: 1440px;
+}
+
+.case-studies-1 {
+    height: 652px;
+    left: 29px;
+    position: absolute;
+    top: 75px;
+    width: 1550px;
+}
+
+.sadewa-1 {
+    height: 384px;
+    left: 1080px;
+    object-fit: cover;
+    position: absolute;
+    top: 277px;
+    width: 396px;
+}
+
+.title-8-col-left-align {
+    align-items: flex-start;
+    border: 1px none;
+    display: flex;
+    flex-direction: column;
+    gap: 1500px;
+    margin-left: 136px;
+    overflow: hidden;
+    width: fit-content;
+}
+
+.section-title {
+    -webkit-text-stroke: 1px var(--black);
+    color: var(--erie-black);
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-xl);
+    font-style: italic;
+    font-weight: 700;
+    letter-spacing: -0.76px;
+    line-height: 68px;
+    margin-left: 500px;
+    margin-top: -2px;
+    min-height: 100px;
+    white-space: nowrap;
+    width: 730px;
+}
+
+.setps {
+    align-items: flex-start;
+    align-self: flex-end;
+    border: 1px none;
+    display: flex;
+    gap: 30px;
+    height: 199px;
+    overflow: hidden;
+    width: fit-content;
+}
+
+.x1 {
+    align-items: flex-start;
+    border: 1px none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: -60px;
+    padding: 16px 0px;
+    width: fit-content;
+}
+
+.details {
+    align-items: center;
+    border: 1px none;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: fit-content;
+}
+
+.description {
+    font-size: var(--font-size-s);
+    letter-spacing: -0.10px;
+    height: 509px;
+    line-height: 20px;
+    text-align: center;
+    width: 350px;
+}
+
+.heading {
+    letter-spacing: -0.43px;
+    line-height: 34px;
+    margin-top: 34px;
+    text-align: center;
+    white-space: nowrap;
+    width: 255px;
+}
+
+.screen {
+    background: url('assets/image/bg.jpeg');
+    background-size: cover;
+    background-position: right bottom, left top;
+}
+
+.indication {
+    align-items: flex-start;
+    border: 1px none;
+    display: flex;
+    gap: 24px;
+    width: fit-content;
+}
+
+.line-indicator {
+    height: 2px;
+    min-width: 183px;
+}
+
+.circle {
+    background-color: var(--new-car);
+    border: 1px none;
+    border-radius: 12px;
+    height: 24px;
+    min-width: 24px;
+}
+
+.x4 {
+    align-items: flex-start;
+    border: 1px none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px 45px 16px 100px;
+    width: fit-content;
+}
+
+.description-2 {
+    letter-spacing: -0.29px;
+    margin-top: 15px;
+    line-height: 25px;
+    text-align: center;
+    width: 255px;
+}
+
+.x2 {
+    align-items: flex-start;
+    border: 1px none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px 45px 16px 89px;
+    width: fit-content;
+}
+
+.description-1 {
+    letter-spacing: -0.29px;
+    line-height: 26px;
+    text-align: center;
+    width: 255px;
+}
+
+.overlap-group8 {
+    height: 728px;
+    margin-top: 46px;
+    position: relative;
+    width: 1440px;
+}
+
+.overlap-group7 {
+    align-items: flex-end;
+    align-self: center;
+    background-color: #d2d2d280;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    margin-top: 113px;
+    min-height: 1224px;
+    padding: 24px 54px;
+    width: 1267px;
+}
+
+.silahkan-isi-laporan {
+    align-self: flex-start;
+    letter-spacing: -0.32px;
+    line-height: 28px;
+    margin-left: 71px;
+    margin-top: 37px;
+    opacity: 0.5;
+    white-space: nowrap;
+}
+
+.form-laporan {
+    align-self: center;
+    color: var(--black);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-l);
+    font-weight: 900px;
+    letter-spacing: -0.58px;
+    line-height: 38px;
+    margin-top: 80px;
+    min-height: 46px;
+    text-align: center;
+    width: 1063px;
+}
+
+.buttons {
+    align-items: center;
+    background-color: #08a3ff;
+    border: 1px none;
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+    height: 58px;
+    justify-content: center;
+    margin-right: 24px;
+    margin-top: 59px;
+    padding: 5px 20px;
+    width: 138px;
+}
+
+.button-text {
+    color: #191919;
+    font-family: var(--font-family-poppins);
+    font-size: var (--font-size-s);
+    font-weight: 700;
+    letter-spacing: -0.29px;
+    line-height: 26px;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.group-210 {
+    align-items: flex-start;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-top: 15px;
+    min-height: 820px;
+    width: 1124px;
+}
+
+.overlap-group {
+    align-items: flex-start;
+    background-image: url(https://anima-uploads.s3.amazonaws.com/projects/63537a1ed78a956683b1282e/releases/63537a574dd3a6b4b62a55a3/img/rectangle-12@1x.svg);
+    background-size: 100% 108%;
+    display: flex;
+    gap: 671px;
+    height: 72px;
+    justify-content: flex-end;
+    margin-left: 1px;
+    margin-top: 24px;
+    min-width: 1109px;
+    padding: 15px 20px;
+}
+
+.upload-bukti {
+    position: absolute;
+    left: 663px;
+    margin-top: 25px;
+    letter-spacing: -0.32px;
+    line-height: 28px;
+    white-space: nowrap;
+    width: 346px;
+}
+
+.overlap-group6 {
+    height: 30px;
+    margin-top: 2px;
+    position: relative;
+    width: 124px;
+}
+
+.choose-file {
+    left: 10px;
+    letter-spacing: -0.32px;
+    line-height: 28px;
+    position: absolute;
+    top: 25px;
+    white-space: nowrap;
+    width: 114px;
+}
+
+.rectangle-392 {
+    height: 30px;
+    left: 0;
+    position: absolute;
+    top: 25px;
+    width: 117px;
+}
+
+.overlap-group5 {
+    align-items: flex-start;
+    background-image: url(https://anima-uploads.s3.amazonaws.com/projects/63537a1ed78a956683b1282e/releases/63537a574dd3a6b4b62a55a3/img/rectangle-12@1x.svg);
+    background-size: 100% 108%;
+    display: flex;
+    gap: 671px;
+    height: 72px;
+    justify-content: flex-end;
+    margin-left: 1px;
+    margin-top: 24px;
+    min-width: 1109px;
+    padding: 15px 20px;
+}
+
+.masuk {
+    letter-spacing: -0.32px;
+    line-height: 28px;
+    white-space: nowrap;
+    width: 380px;
+}
+
+.overlap-group2 {
+    align-items: flex-start;
+    background-image: url(https://anima-uploads.s3.amazonaws.com/projects/63537a1ed78a956683b1282e/releases/63537a574dd3a6b4b62a55a3/img/rectangle-12@1x.svg);
+    background-size: 100% 108%;
+    display: flex;
+    gap: 671px;
+    height: 72px;
+    justify-content: flex-end;
+    margin-left: 1px;
+    margin-top: 24px;
+    min-width: 1109px;
+    padding: 15px 20px;
+}
+
+.overlap-group1 {
+    align-items: flex-start;
+    background-image: url(https://anima-uploads.s3.amazonaws.com/projects/63537a1ed78a956683b1282e/releases/63537a574dd3a6b4b62a55a3/img/rectangle-12@1x.svg);
+    background-size: 100% 108%;
+    display: flex;
+    gap: 671px;
+    height: 72px;
+    justify-content: flex-end;
+    margin-left: 1px;
+    margin-top: 24px;
+    min-width: 1109px;
+    padding: 15px 20px;
+}
+
+.rectangle-390 {
+    height: 72px;
+    left: -195px;
+    position: absolute;
+    top: 0;
+    width: 1500px;
+}
+
+.rectangle-389 {
+    height: 71px;
+    left: 1045;
+    position: absolute;
+    top: 2;
+    width: 64px;
+}
+
+.overlap-group4 {
+    align-items: flex-start;
+    background-image: url(https://anima-uploads.s3.amazonaws.com/projects/63537a1ed78a956683b1282e/releases/63537a574dd3a6b4b62a55a3/img/rectangle-12@1x.svg);
+    background-size: 100% 108%;
+    display: flex;
+    gap: 671px;
+    height: 72px;
+    justify-content: flex-end;
+    margin-left: 1px;
+    margin-top: 24px;
+    min-width: 1109px;
+    padding: 15px 20px;
+}
+
+.overlap-group12 {
+    align-items: flex-start;
+    background-image: url(https://anima-uploads.s3.amazonaws.com/projects/63537a1ed78a956683b1282e/releases/63537a574dd3a6b4b62a55a3/img/rectangle-12@1x.svg);
+    background-size: 100% 100% 100%;
+    display: flex;
+    gap: 1000px;
+    height: 250px;
+    justify-content: flex-end;
+    margin-left: 1px;
+    margin-top: 24px;
+    min-width: 1109px;
+    padding: 15px 20px;
+}
+
+.masukkan-kategori-laporan {
+    position: absolute  ;
+    letter-spacing: -0.32px;
+    line-height: 80px;
+    white-space: nowrap;
+    width: 380px;
+    left: 660px;
+}
+
+.masukkan-isi-laporan {
+    letter-spacing: -0.32px;
+    line-height: 80px;
+    white-space: nowrap;
+    width: 380px;
+    position: absolute;
+    left: 663px;
+}
+
+.masukkan-judul-laporan {
+    letter-spacing: -0.32px;
+    line-height: 80px;
+    white-space: nowrap;
+    position: absolute;
+    width: 380px;
+    left: 663px;
+}
+
+.masukkan-alamat-kejadian {
+    letter-spacing: -0.32px;
+    line-height: 80px;
+    white-space: nowrap;
+    position: absolute;
+    width: 380px;
+    left: 663px;
+}
+
+.masukkan-tanggal-kejadian {
+    letter-spacing: -0.32px;
+    position: absolute;
+    top:834px;
+    left: 663px;
+    line-height: 80px;
+    white-space: nowrap;
+    width: 380px;
+}
+
+.polygon-1 {
+    align-self: center;
+    height: 18px;
+    margin-top: 2px;
+    width: 26px;
+}
+
+.overlap-group3 {
+    align-items: flex-start;
+    background-image: url(https://anima-uploads.s3.amazonaws.com/projects/63537a1ed78a956683b1282e/releases/63537a574dd3a6b4b62a55a3/img/rectangle-12@1x.svg);
+    background-size: 100% 108%;
+    display: flex;
+    gap: 671px;
+    height: 72px;
+    justify-content: flex-end;
+    margin-left: 1px;
+    margin-top: 24px;
+    min-width: 1109px;
+    padding: 15px 20px;
+}
+
+.laporan-anda-menyelamatkan-indonesia {
+    color: var(--black);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    position: absolute; 
+    font-style: italic;
+    left: 750px;
+    letter-spacing: -0.94px;
+    line-height: 62px;
+    min-height: 94px;
+    width: 1111px;
+}
+
+.footer-1 {
+    align-items: flex-start;
+    border: 1px none;
+    display: flex;
+    gap: -100px;
+    border-radius: 25px 25px 25px 25px;
+    width: 1600px;
+}
+
+.headline-of-modern-a {
+    align-self: left;
+    color: var(--black);
+    font-family: var(--font-family-inter);
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -1.16px;
+    line-height: 72px;
+    margin-top: 50px;
+    margin-left: 559px;
+    min-height: -50px;
+    text-align: center;
+    width: 560px;
+}
+
+.paragraph20 {
+    align-self: left;
+    color: var(--black);
+    position: absolute;
+    left: 910px;
+    font-family: var(--font-family-poppins);
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1.16px;
+    line-height: 90px;
+    margin-top: -25px;
+    min-height: -5px;
+    text-align: center;
+    width: 500px;
+}
+
+.group-209 {
+    background-color: #ffffff14;
+    height: 1px;
+    width: 580px;
+}
+
+.background {
+    height: 800px;
+    left: 0px;
+    position: absolute;
+    margin-top: -20px;
+    width: 2380px;
+}
