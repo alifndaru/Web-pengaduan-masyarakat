@@ -28,15 +28,34 @@
         </h6>
         {{-- <a href="#" class="btn btn-primary">Go somewhere</a> --}}
       </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        Penjelasan
+      </div>
+      <div class="card-body">
+        <h6 class="card-title">Foto</h6>
+        <img src="{{$items->image}}" alt="">
+        <h6 class="card-title mb-3">Keterangan</h6>
+        <p>{{$items->description}}</p>
+      </div>
+    </div>
     @endforeach
+    
+   
+
+  <div class="card">
+    <div class="card-body">
+      <h6 class="card-title mb-4">Tanggapan</h6>
+       @if (empty($tanggapan->tanggapan))
+          Belum ada tanggapan
+        @else
+          <p>{{$tanggapan->tanggapan}}</p>
+        @endif
+    </div>
   </div>
 
-  <div class="card-header">
-
-  </div>
-  <div class="card-body">
-    <h6 class="card-title"></h6>
-  </div>
+  <a href="{{route('tanggapan.show', $tanggapan->id_tanggapan)}}"><button type="button" class="btn btn-xl btn-primary">Berikan tanggapan</button></a>
   
 </section>
 @endsection

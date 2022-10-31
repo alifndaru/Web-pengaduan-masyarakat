@@ -5,8 +5,10 @@ namespace App\Http\Controllers;
 use App\Models\Pengaduan;
 use App\Models\Tanggapan;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
-class PengaduanController extends Controller
+
+class TanggapanController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +17,7 @@ class PengaduanController extends Controller
      */
     public function index()
     {
-        $pengaduan = Pengaduan::orderBy('created_at', 'DESC')->get();
-        return view('Backend.pengaduan.index', compact('pengaduan'));
+        //
     }
 
     /**
@@ -37,7 +38,16 @@ class PengaduanController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // dd($request->all());
+        DB::table('pengaduans')->where('id_pengaduan', $request->id_pengaduan)->update([
+            'status' => $request->status,
+        ]);
+        $data = $request->all();
+        $data['id_pengaduan'] = $request->id_pengaduan;
+        // $data['user_nik'] = $request->
+        // dd($data);
+        Tanggapan::create($data);
+        return redirect()->route('pengaduan')->with('Berhasil', 'Pengaduan berhasil ditanggapi');
     }
 
     /**
@@ -48,18 +58,13 @@ class PengaduanController extends Controller
      */
     public function show($id)
     {
-        // dd($id);
-        $items = Pengaduan::with([
-            'details', 'user'
-        ])->where('id_pengaduan', $id)->first();
-        
-        $tanggapan = Tanggapan::where('id_pengaduan', $id)->first();
-        // dd($tanggapan);
-        return view('Backend.pengaduan.detail',[
-            'items' => $items,
-            'tanggapan' => $tanggapan
+        $item = Pengaduan::with([
+            'details', 'user', 'petugas'
+        ])->where('id_tanggapan', $id)->first();
+        // dd($item);
+        return view('Backend.tanggapan.add',[
+            'item' => $item
         ]);
-
     }
 
     /**

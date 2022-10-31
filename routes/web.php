@@ -7,6 +7,7 @@ use App\Http\Controllers\PengaduanController;
 use App\Http\Controllers\PetugasController;
 use App\Http\Controllers\SmartMonitoringController;
 use App\Http\Controllers\SmartMonitoringSosmedController;
+use App\Http\Controllers\TanggapanController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -33,3 +34,6 @@ Route::get('/data-petugas', [PetugasController::class, 'index'])->name('data-pet
 //pengaduan routes
 Route::get('/pengaduan', [PengaduanController::class, 'index'])->name('pengaduan');
 Route::get('/detail-pengaduan/{id}', [PengaduanController::class,'show'])->name('detail-pengaduan');
+Route::resource('tanggapan', 'App\Http\Controllers\TanggapanController');
+// Route::get('/tanggapan/{id}', [TanggapanController::class, 'show'])->name('tanggapan');
+// Route::post('/buat-tanggapan/{id}', [TanggapanController::class, 'store'])->name('store');

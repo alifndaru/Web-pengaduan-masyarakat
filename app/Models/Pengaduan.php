@@ -12,6 +12,9 @@ class Pengaduan extends Model
     protected $fillable = [
         'id_pengaduan',	'user_nik', 'id_tanggapan', 'name', 'description', 'image', 'status','created_at','updated_at'
     ];
+    protected $hidden = [
+    
+    ];
 
     public function user()
     {
@@ -22,6 +25,26 @@ class Pengaduan extends Model
     {
         return $this->hasMany(Pengaduan::class, 'id_pengaduan', 'id_tanggapan');
     }
+
+    public function tanggapans()
+    {
+        return $this->belongsTo(Pengaduan::class, 'id_tanggapan', 'id_pengaduan');
+    }
+    public function tanggapan()
+    {
+        return $this->hasMany(Tanggapan::class, 'id_tanggapan', 'id_pengaduan');
+    }
+
+    public function status() {
+        return $this->belongsTo(Tanggapan::class, 'id_tanggapan','status');
+    }
+
+    public function petugas()
+    {
+        return $this->hasMany(Tanggapan::class, 'id_tanggapan', 'id_pengaduan');
+    }
+    
+    
 
     // public function tanggapans()
     // {
