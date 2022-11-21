@@ -5,7 +5,8 @@
     <h3>Detail pengaduan</h3>
   </div>
   <div>
-    <button type="button" class="btn btn-primary mb-3">Eksport pdf</button>
+    {{-- <button type="button" class="btn btn-primary mb-3">Eksport pdf</button> --}}
+    <a href="{{route('cetak', $items->id_tanggapan)}}"><button type="button" class="btn btn-primary mb-3">Eksport PDF</button></a>
   </div>
   <div class="card">
     <div class="card-header">
@@ -55,7 +56,7 @@
     </div>
   </div>
 
-  <a href="{{route('tanggapan.show', $tanggapan->id_tanggapan)}}"><button type="button" class="btn btn-xl btn-primary">Berikan tanggapan</button></a>
+  <a href="{{route('tanggapan.show', $items->id_tanggapan)}}"><button type="button" class="btn btn-xl btn-primary">Berikan tanggapan</button></a>
   
 </section>
 @endsection

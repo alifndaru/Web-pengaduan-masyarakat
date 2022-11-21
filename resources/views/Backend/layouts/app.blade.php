@@ -45,7 +45,6 @@
      @include('Backend.layouts.footer')
     </div>
   </div>
-
   <!-- General JS Scripts -->
   <script src="{{asset('assets/stisla/assets/js/jquery.min.js')}}"></script>
   <script src="{{asset('assets/stisla/assets/js/popper.js')}}"></script>
@@ -62,5 +61,6 @@
   <!-- Template JS File -->
   <script src="{{asset('assets/stisla/assets/js/scripts.js')}}"></script>
   <script src="{{asset('assets/stisla/assets/js/custom.js')}}"></script>
+  @include('sweetalert::alert')
 </body>
 </html>

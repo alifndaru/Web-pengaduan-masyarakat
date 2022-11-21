@@ -2,12 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Pengaduan;
-use App\Models\Tanggapan;
+use App\Models\User;
+use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+// use RealRashid\SweetAlert\Facades\Alert;
+use Alert;
 
-class PengaduanController extends Controller
+class RegisterController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,8 +19,7 @@ class PengaduanController extends Controller
      */
     public function index()
     {
-        $pengaduan = Pengaduan::orderBy('created_at', 'DESC')->get();
-        return view('Backend.pengaduan.index', compact('pengaduan'));
+        return view('Frontend.Auth.register');
     }
 
     /**
@@ -27,7 +29,7 @@ class PengaduanController extends Controller
      */
     public function create()
     {
-        //
+        
     }
 
     /**
@@ -39,8 +41,18 @@ class PengaduanController extends Controller
     public function store(Request $request)
     {
         
-        // $input = $request->all();
-
+        $validasi = $request->validate([
+            'nik' => 'required|min:16|unique:users',
+            'name' => 'required|min:6|max:255|unique:users',
+            'email' => 'required|email|unique:users',
+            'phone' => 'required|min:10|max:20',
+            'password' => 'required|min:5|max:255'
+        ]);
+        $validasi['password'] = Hash::make($validasi['password']);
+        // dd($validasi);
+        User::create($validasi);
+        $request->session()->flash('success', 'registrasi berhasil');
+        return redirect('/login');
     }
 
     /**
@@ -51,19 +63,7 @@ class PengaduanController extends Controller
      */
     public function show($id)
     {
-        // dd($id);
-        $items = Pengaduan::with([
-            'details', 'user'
-        ])->where('id_pengaduan', $id)->first();
-
-        // $tanggapan = Tanggapan::where('id_pengaduan', $id)->first();
-        $tanggapan = Tanggapan::where('id_pengaduan', $id)->orderBy('created_at', 'DESC')->first();
-
-        return view('Backend.pengaduan.detail',[
-            'items' => $items,
-            'tanggapan' => $tanggapan
-        ]);
-
+        //
     }
 
     /**
